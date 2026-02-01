@@ -55,7 +55,7 @@ export default function Contact() {
           {/* Actions */}
           <div className="pt-2 flex flex-wrap gap-3">
             <a
-              href="mailto:thetmyatnoe.jp@gmail.com"
+              href="thetmyatnoe.jp@gmail.com"
               className="rounded-xl bg-white/10 px-4 py-2 hover:bg-white/15 transition"
             >
               Email me

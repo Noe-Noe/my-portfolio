@@ -7,7 +7,7 @@ export const profile = {
   links: {
     //github: "https://github.com/yourname",
     linkedin: "https://www.linkedin.com/in/thet-myat-n-545546227/",
-    email: "thetmyatnoe.jp@gmail.com",
+    email: "mailto:thetmyatnoe.jp@gmail.com",
   },
   skills: [
   "React",
