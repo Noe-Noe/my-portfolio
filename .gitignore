@@ -23,3 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 public/projects/fyp-real-estate/*.mp4
+*.mp4
