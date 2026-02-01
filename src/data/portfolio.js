@@ -10,13 +10,14 @@ export const profile = {
     email: "mailto:thetmyatnoe.jp@gmail.com",
   },
   skills: [
+  "Java",
+  "Python",
   "React",
   "JavaScript",
   "Tailwind CSS",
   "Node.js",
   "Supabase",
   "PostgreSQL",
-  "Java",
 ],
 };
 export const projects = [
