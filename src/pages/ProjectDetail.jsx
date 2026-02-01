@@ -201,38 +201,51 @@ useEffect(() => {
     <div className="mt-4 grid gap-4 md:grid-cols-2">
       {project.screenshots.map((shot) => {
         const isVideo = shot.type === "video";
+        const isYouTube = shot.type === "youtube";
 
         return (
           <div
             key={shot.src}
             className={[
               "overflow-hidden rounded-2xl border border-white/10 bg-white/5",
-              isVideo ? "md:col-span-2" : "",
+              isVideo || isYouTube ? "md:col-span-2" : "",
             ].join(" ")}
           >
-            {isVideo ? (
-              <video
-                src={shot.src}
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-auto"
-              />
-            ) : (
-              <button
-                type="button"
-                onClick={() => setActiveShot(shot)}
-                className="group w-full text-left focus:outline-none focus:ring-2 focus:ring-white/20"
-                title="Click to zoom"
-              >
-                <img
-                  src={shot.src}
-                  alt={shot.alt || `${project.name} screenshot`}
-                  className="h-auto w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                  loading="lazy"
-                />
-              </button>
-            )}
+            {isYouTube ? (
+  <div className="aspect-video w-full">
+    <iframe
+      className="h-full w-full"
+      src={`https://www.youtube-nocookie.com/embed/Ublroq4tSNY`}
+      title={shot.caption || `${project.name} demo video`}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+    />
+  </div>
+) : isVideo ? (
+  <video
+    src={shot.src}
+    controls
+    playsInline
+    preload="metadata"
+    className="w-full h-auto"
+  />
+) : (
+  <button
+    type="button"
+    onClick={() => setActiveShot(shot)}
+    className="group w-full text-left focus:outline-none focus:ring-2 focus:ring-white/20"
+    title="Click to zoom"
+  >
+    <img
+      src={shot.src}
+      alt={shot.alt || `${project.name} screenshot`}
+      className="h-auto w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+      loading="lazy"
+    />
+  </button>
+)}
+
 
             {shot.caption && (
               <div className="px-4 py-3 text-sm text-zinc-300/80">

@@ -51,8 +51,8 @@ export const projects = [
   mediaLabel: "Project Demo",
  screenshots: [
     {
-      type: "video",
-      src: "/projects/fyp-real-estate/demo.mp4",
+      type: "youtube",
+      src: "Ublroq4tSNY",
       caption: "Project walkthrough demo",
     },
   ],
