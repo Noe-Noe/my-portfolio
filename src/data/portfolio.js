@@ -1,6 +1,6 @@
 export const profile = {
   name: "Thet Myat Noe",
-  title: "Full-Stack • Data • Product",
+  title: " Full-Stack Developer • Business Analysis",
   tagline:
     "I ship clean web products with real data, solid UX, and maintainable systems.",
   location: "Singapore",

@@ -41,7 +41,7 @@ export default function Home() {
         <GlassCard className="p-6">
           <h2 className="text-lg font-semibold">About</h2>
            <p className="mt-2 max-w-xl text-zinc-300/80">
-            Works across frontend and backend, with an interest in building clear, well-structured web applications. Enjoys working with data, keeping things organised, and turning ideas into systems that are practical and easy to use.
+            Full-stack developer with experience building web applications across frontend and backend, with experience translating requirements into system features, data models, and user flows through academic and personal projects.
           </p>
 
 
