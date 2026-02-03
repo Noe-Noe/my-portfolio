@@ -1,4 +1,10 @@
 import GlassCard from "../components/GlassCard";
+import { FiMail } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { profile} from "../data/portfolio";
+import { FiFileText } from "react-icons/fi";
+import { Link } from "react-router-dom";
+
 
 export default function Contact() {
   return (
@@ -54,30 +60,33 @@ export default function Contact() {
 
           {/* Actions */}
           <div className="pt-2 flex flex-wrap gap-3">
-            <a
-              href="mailto:thetmyatnoe.jp@gmail.com"
-              className="rounded-xl bg-white/10 px-4 py-2 hover:bg-white/15 transition"
+             <a
+              href={profile.links.email}
+              className="p-3 rounded-xl bg-white/10 hover:bg-white/15 transition text-zinc-200"
+              aria-label="Email"
             >
-              Email me
+              <FiMail className="text-lg" />
             </a>
 
             <a
-              href="https://wa.me/6590252944"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl bg-emerald-500/15 px-4 py-2 text-emerald-300 hover:bg-emerald-500/25 transition"
-            >
-              WhatsApp
-            </a>
+            href={profile.links.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+            className="p-3 rounded-xl bg-white/10 hover:bg-white/15 transition text-zinc-200"
+            aria-label="WhatsApp"
+          >
+            <FaWhatsapp className="text-lg" />
+          </a>
 
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-xl bg-white/5 px-4 py-2 hover:bg-white/10 transition"
-            >
-              Resume
-            </a>
+            href={profile.links.resume}
+            target="_blank"
+            rel="noreferrer"
+            className="p-3 rounded-xl bg-white/10 hover:bg-white/15 transition text-zinc-200"
+            aria-label="Resume"
+          >
+            <FiFileText className="text-lg text-zinc-200" />
+          </a>
           </div>
         </div>
       </GlassCard>

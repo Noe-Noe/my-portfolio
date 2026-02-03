@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import GlassCard from "./GlassCard";
+import { profile } from "../data/portfolio";
 
 const base =
   "rounded-xl px-3 py-2 text-sm transition hover:bg-white/10";
@@ -41,6 +42,22 @@ export default function Navbar() {
             >
                 Contact
             </NavLink>
+        
+            <a
+              href={profile.links.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="
+                px-3 py-1.5 rounded-lg
+                text-sm font-medium
+                bg-emerald-500/10 text-emerald-400
+                border border-emerald-500/20
+                hover:bg-emerald-500/20 hover:text-emerald-400
+                transition
+              "
+            >
+              Resume
+            </a>
             </div>
           </div>
         </GlassCard>

@@ -5,9 +5,11 @@ export const profile = {
     "I ship clean web products with real data, solid UX, and maintainable systems.",
   location: "Singapore",
   links: {
-    //github: "https://github.com/yourname",
+    github: "https://github.com/Noe-Noe",
     linkedin: "https://www.linkedin.com/in/thet-myat-n-545546227/",
     email: "mailto:thetmyatnoe.jp@gmail.com",
+    whatsapp: "https://wa.me/6590252944",
+    resume: "/resume.pdf",
   },
   skills: [
   "Java",
