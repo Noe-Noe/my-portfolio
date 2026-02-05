@@ -122,6 +122,56 @@ export const projects = [
 //   ],
 // }
 // ,
+    {
+      slug: "clarity-aesthetic-clinic",
+      name: "Clarity Aesthetic Clinic Website",
+      description:
+        "A modern website built for an aesthetic clinic to present services, brand identity, and contact information with a clean, professional layout.",
+
+      tags: ["React", "Vite", "Tailwind CSS", "UI/UX"],
+
+      demoUrl: "https://clarity-clinic-website.vercel.app/", 
+      repoUrl: "", // leave empty if private
+
+      role: "Web Developer",
+      timeline: "2026",
+      status: "Completed",
+
+      problem:
+        "The clinic needed a professional online presence to clearly communicate its services and brand while remaining easy to navigate on both desktop and mobile.",
+
+      solution:
+        "Developed a responsive clinic website with a clean visual style, clear service sections, and accessible contact information.",
+
+      features: [
+        "Responsive layout for desktop and mobile devices",
+        "Service sections for aesthetic treatments",
+        "Clean navigation and branding",
+        "Contact and inquiry access points",
+        "Modern glass-style UI elements",
+      ],
+
+      screenshots: [
+        { src: "/projects/clarity-clinic/landing.png", caption: "Homepage" },
+        { src: "/projects/clarity-clinic/explore.png", caption: "Explore treatments" },
+        { src: "/projects/clarity-clinic/doctors.png", caption: "Meet the doctors" },
+        { src: "/projects/clarity-clinic/spa.png", caption: "Spa experience" },
+        { src: "/projects/clarity-clinic/treatmentDetail.png", caption: "Treatment details" },
+      ],
+
+      stack: [
+        "React + Vite",
+        "Tailwind CSS",
+        "Component-based UI",
+        "Deployed on Vercel",
+      ],
+
+      results: [
+        "Delivered a clean and professional clinic website",
+        "Improved clarity of service information for visitors",
+      ],
+    },
+
 
   {
   slug: "job-application-tracker",
